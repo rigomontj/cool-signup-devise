@@ -12,7 +12,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-
+gem 'devise'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug',  '9.0.6', platform: :mri
