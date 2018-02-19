@@ -1,0 +1,58 @@
+.a
+{
+  
+}
+
+.b
+{
+  
+}
+
+.
+{
+  
+}
+
+.d
+{
+  
+}
+
+.e
+{
+  
+}
+
+.emailbar
+{
+  border-left-color: grey;
+  border-right-color: grey;
+  border-bottom-color: grey;
+  border-top-color: grey;
+  border: 3px;
+  background-color: white;
+}
+
+.passwordbar
+{
+  border: 1px;
+  background-color: white;
+}
+
+.passwordconfirmationbar
+{
+  border: 1px;
+  background-color: white;
+}
+
+.confirmbutton
+{
+  color: white;
+  background-color: #4e7ce7;
+}
+
+.loginbutton
+{
+  color: white;
+  background-color: #a8a9bb;
+}

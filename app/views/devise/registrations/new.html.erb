@@ -1,29 +1,39 @@
-<h2>Sign up</h2>
+<head>
+  <%= stylesheet_link_tag "signup" %>
+</head>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class: '_1'>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<div class: '_2'>
+<div class: '_3'>
+  <h1>uniform</h1>
+  <h4>L'inscription devient plus simple</h4>
+  <h5>______</h5>
+  <h5>Un seul formulaire pour toutes les écoles</h5>
+  <h5>Gérez facilement vos candidatures</h5>
+  <h5>Stockez vos données scolaires</h5>
+</div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+<div class: '_4'>
+  <h5>Entrez vos identifiants</h5>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <%= f.email_field :email, placeholder: 'Addresse Email', autofocus: true, autocomplete: "email", class: "emailbar" %>
+    </br>
+    <%= f.password_field :password, placeholder: 'Mot de passe', autocomplete: "off", class: "passwordbar" %>
+    </br>
+    <%= f.password_field :password_confirmation, placeholder: 'Confirmation', autocomplete: "off", class: "passwordconfirmationbar" %>
+    </br>
+    <%= f.submit "Inscription", class: "confirmbutton" %>
+  <% end %>
 
-<%= render "devise/shared/links" %>
+<div class: '_.5'>
+  <%= link_to 'Connexion', new_user_session_path, class: 'loginbutton' %>
+</div>
+
+</div>
+</div>
+
+</div>
